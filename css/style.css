@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700&display=swap");
+.bg-fix {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+#bannerNosotros, #bannerServicios {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vh;
+}
+
+#bannerNosotros div, #bannerServicios div {
+  height: 88vh;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  background-image: url(../img/prueba.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 60px;
+}
+
+#navbarDark {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 99;
+  width: 50px;
+}
+
+#footer .imagen {
+  width: 200px;
+  height: 108px;
+}
+
+#footer .logo {
+  width: 45px;
+}
+
+.animation {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.animation:hover {
+  padding: 1rem 0;
+}
+
+#banner {
+  background-image: url(../img/banner_main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.slogan {
+  height: 90vh;
+}
+
+.slogan h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+.slogan a {
+  background-color: #430e12a1;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.slogan a:hover {
+  background-color: #3d060c;
+}
+
+#informacion .items {
+  width: 35%;
+}
+
+#informacion .items a {
+  background-color: #722F37;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  padding: 0.7rem;
+  border-radius: 2px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#informacion .items a:hover {
+  background-color: #480c13;
+}
+
+#informacion .items h3 {
+  letter-spacing: 1px;
+}
+
+#informacion .items img {
+  width: 90px;
+}
+
+.carousel-inner {
+  width: auto;
+  max-height: 400px;
+  text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  .carousel-inner .carousel-inner {
+    height: auto;
+  }
+}
+
+#nosotros .main {
+  width: 95%;
+}
+
+.saber {
+  background-color: #722F37;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  padding: 0.7rem;
+  border-radius: 2px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.saber:hover {
+  background-color: #480c13;
+}
+
+#catalogoDirecto div {
+  height: auto;
+}
+
+#catalogoDirecto div .boton {
+  background-color: #722F37;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  padding: 0.7rem;
+  border-radius: 2px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#catalogoDirecto div .boton:hover {
+  background-color: #480c13;
+}
+
+#ubicacion .flex {
+  width: 70%;
+}
+
+#ubicacion .fuente {
+  font-size: 3rem;
+}
+
+#bannerNosotros {
+  background-image: url(../img/banner_nosotros.jpg);
+}
+
+#bannerNosotros div h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#bannerNosotros div p {
+  color: #dee4eb;
+  font-size: 1rem;
+}
+
+#informacionNosotros h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+#informacionNosotros img {
+  width: 30%;
+}
+
+@media all and (max-width: 768px) {
+  #informacionNosotros img {
+    width: 330px;
+  }
+}
+
+#carruselNosotros .d-flex {
+  overflow: hidden;
+}
+
+#carruselNosotros .d-flex img {
+  padding-right: 1px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carruselNosotros .d-flex img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media all and (max-width: 768px) {
+  #carruselNosotros {
+    display: none;
+  }
+}
+
+#bannerServicios {
+  background-image: url(../img/banner_servicios.jpg);
+}
+
+#bannerServicios div h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#bannerServicios div p {
+  color: #dee4eb;
+  font-size: 1rem;
+}
+
+#informacionServicios h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+#informacionServicios .cajas {
+  width: 90%;
+}
+
+@media all and (max-width: 768px) {
+  #informacionServicios .cajas {
+    max-width: 500px;
+  }
+}
+
+#informacionServicios .cajas .scale {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#informacionServicios .cajas .scale:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#informacionServicios .cajas img {
+  width: 100%;
+  height: 215px;
+}
+
+@media all and (max-width: 768px) {
+  #informacionServicios .cajas img {
+    height: 266px;
+  }
+}
+
+#informacionServicios .cajas h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#informacionServicios .cajas p {
+  font-size: .9rem;
+}
+/*# sourceMappingURL=style.css.map */

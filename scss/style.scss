@@ -1,0 +1,43 @@
+@import "variables";
+@import "fuentes";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-brand{
+    background-image: url(../img/prueba.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 60px;
+}
+#navbarDark{
+    justify-content: right;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+}
+
+#footer{
+    .imagen{
+        width: 200px;
+        height: 108px;
+    }
+    .logo{
+        width: 45px;
+    }
+}
+
+@import "pages/main";
+@import "pages/nosotros";
+@import "pages/servicios";
+@import "pages/catalogo";
+@import "pages/contacto";
+

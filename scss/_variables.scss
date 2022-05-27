@@ -1,0 +1,49 @@
+$color-boton: #722F37;
+$color-boton-hover: #480c13;
+
+
+.bg-fix{
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+%claseBanner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+    div{
+        height: 88vh;
+    }
+}
+
+@mixin titulo-banner{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+}
+
+@mixin subtitulo-banner{
+    color: rgb(222, 228, 235);
+    font-size: 1rem;
+}
+
+@mixin titulo-info{
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+@mixin claseBoton ($spacing){
+    background-color: $color-boton;
+    font-size: .9rem;
+    letter-spacing: $spacing;
+    padding: 0.7rem;
+    border-radius: 2px;
+    transition: all 300ms;
+    &:hover{
+        background-color: $color-boton-hover;
+    }
+}

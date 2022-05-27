@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Contácto</title>
+</head>
+<body>
+  <div id="header">
+	<nav class="animation navbar navbar-expand-lg navbar fixed-top fs-6 navbar-dark bg-fix">
+	  <div class="container-fluid mx-5">
+		<a class="navbar-brand" href="index.html"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarDark">
+		  <ul class="navbar-nav text-end ml-auto my-2">
+			<li class="nav-item px-2 py-md-1">
+			  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			</li>
+			<li class="nav-item px-2 py-md-1">
+			  <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
+			</li>
+			<li class="nav-item px-2 py-md-1">
+			  <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+			</li>
+			<li class="nav-item px-2 py-md-1">
+			  <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+			</li>
+			<li class="nav-item px-2 py-md-1">
+			  <a class="nav-link active" aria-current="page" href="contacto.html">Contácto</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	<a href="#"><img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp"></a>
+  </div>
+
+  <main>             <!-- Empieza todo el contenido de la pagina -->
+	<div class="main__contacto">		
+		<div class="portada__contacto">
+			<p class="contacto__titulo">¡QUEREMOS CONOCERTE!</p>		
+		</div>
+	</div>
+
+	<div class="contacto__contenido">
+		<h2 class="contacto__contenido__titulo">CONTÁCTANOS</h2>
+		<div class="form__div">
+			<form class="form" action="contacto.html" method="POST" enctype="multipart/form-data">
+				<input type="text" class="form__nombre" name="nombre" placeholder="Nombre">
+				<input type="text" class="form__apellido" name="apellido" placeholder="Apellido">
+				<input type="email" class="form__email" name="email" placeholder="Email">
+				<input type="tel" class="form__num" name="telefono" placeholder="Telefono">
+
+				<textarea name="mensaje" class="form__area" placeholder="Mensaje" cols="30" rows="10"></textarea>
+
+				<input type="checkbox" class="form__noti" name="noti" id="noti">
+				<label for="noti" class="form__noti">¿Desea recibir ofertas y novedades nuevas?</label>
+
+				<input type="submit" class="form__boton" name="enviar" value="Enviar">                
+			</form>
+		</div>
+	</div>
+  </main>
+
+  <footer id="footer">
+	<div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between px-4 py-3 bg-black">
+	  <a href="index.html" class="mx-auto mx-sm-1"><img src="img/prueba.jpg" alt="Logo" class="imagen img-fluid"></a>
+	  <div class="d-flex flex-column px-5 text-center text-sm-end">
+		<p class="text-white">Seguinos en nuestras redes</p>
+		<div class="text-center text-sm-end py-2">
+		  <a href="#"><img src="img/instagram2.png" alt="Instagram" class="logo px-1"></a>
+		  <a href="#"><img src="img/facebook2.png" alt="Facebook" class="logo px-1"></a>
+		  <a href="#"><img src="img/linkedin.png" alt="Linkedin" class="logo px-1"></a>
+		</div>
+	  </div>
+	</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

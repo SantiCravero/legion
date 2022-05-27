@@ -1,0 +1,44 @@
+#bannerServicios{
+    background-image: url(../img/banner_servicios.jpg);
+    @extend %claseBanner;
+    div{
+        h2{
+            @include titulo-banner
+        }
+        p{
+            @include subtitulo-banner
+        }
+    }
+}
+
+#informacionServicios{
+    h2{
+        @include titulo-info;
+    }
+    .cajas{
+        width: 90%;
+        @media all and (max-width: 768px){
+            max-width: 500px;
+        }
+        .scale{
+            transition: all 300ms;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        img{
+            width: 100%;
+            height: 215px;
+            @media all and (max-width: 768px){
+                height: 266px;
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+}

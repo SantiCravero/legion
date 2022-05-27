@@ -1,0 +1,41 @@
+#bannerNosotros{
+    background-image: url(../img/banner_nosotros.jpg);
+    @extend %claseBanner;
+    div{
+        h2{
+            @include titulo-banner
+        }
+        p{
+            @include subtitulo-banner
+        }
+    }
+}
+
+#informacionNosotros{
+    h2{
+        @include titulo-info;
+    }
+    img{
+        width: 30%;
+        @media all and (max-width: 768px){
+            width: 330px;
+            }
+        }
+}
+
+#carruselNosotros{
+    .d-flex{
+        overflow: hidden;
+        img{
+            padding-right: 1px;
+            transition: all 300ms;
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    @media all and (max-width: 768px){
+        display: none;
+    }
+}

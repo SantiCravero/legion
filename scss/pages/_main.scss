@@ -1,0 +1,82 @@
+.animation{
+    transition: all 300ms;
+    &:hover{
+        padding: 1rem 0;
+    }
+}
+
+#banner{
+    background-image: url(../img/banner_main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.slogan{
+    height: 90vh;
+    h2{
+        @include titulo-banner
+    }
+    a{
+        background-color: #430e12a1;
+        transition: all 300ms;
+        &:hover{
+            background-color: #3d060c;
+        }
+    }
+}
+
+#informacion{
+    .items{
+        width: 35%;
+        a{
+            @include claseBoton(2px);
+        }
+        h3{
+            letter-spacing: 1px;
+        }
+        img{
+            width: 90px;
+        }
+    }
+}
+
+.carousel-inner{
+    width: auto;
+    max-height: 400px;
+    text-align: center;
+    @media all and (max-width: 768px){
+    .carousel-inner{
+        height: auto;
+        }
+    }
+}
+
+#nosotros{
+    .main{
+        width: 95%;
+    }
+}
+
+.saber{
+    @include claseBoton(1px);
+}
+
+#catalogoDirecto{
+    div{
+        height: auto;
+        .boton{
+            @include claseBoton(1px);
+        }
+    }
+}
+
+#ubicacion{
+    .flex{
+        width: 70%;
+    }
+    .fuente{
+        font-size: 3rem; 
+    }
+}
