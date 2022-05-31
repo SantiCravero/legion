@@ -17,6 +17,15 @@ body{
 #navbarDark{
     justify-content: right;
 }
+
+.animation{
+    backdrop-filter: blur(2px);
+    transition: all 300ms;
+    &:hover{
+        padding: 1rem 0;
+    }
+}
+
 .whatsapp{
     position: fixed;
     bottom: 15px;
