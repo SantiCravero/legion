@@ -1,0 +1,44 @@
+#bannerContacto{
+    background-image: url(../img/banner_contacto.jpg);
+    @extend %claseBanner;
+    div{
+        h2{
+            @include titulo-banner
+        }
+        p{
+            @include subtitulo-banner
+        }
+    }
+}
+
+#informacionContacto{
+    h2{
+        @include titulo-info;
+    }
+    .formulario{
+        @media all and (max-width:768px){
+            width: 90%;
+        }
+    }
+    form{
+        @media all and (max-width: 768px){
+            width: 90%;
+        }
+        .btn{
+            background-color: $color-boton;
+        }
+    }
+    .datos{
+        >p{
+            @include titulo-info;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+        img{
+            width: 30px;
+        }
+        @media all and (max-width: 768px){
+            width: 95%;
+        }
+    }
+}

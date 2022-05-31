@@ -6,14 +6,14 @@
   background-color: rgba(0, 0, 0, 0.726);
 }
 
-#bannerNosotros, #bannerServicios {
+#bannerNosotros, #bannerServicios, #bannerCatalogo, #bannerContacto {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 88vh;
 }
 
-#bannerNosotros div, #bannerServicios div {
+#bannerNosotros div, #bannerServicios div, #bannerCatalogo div, #bannerContacto div {
   height: 88vh;
 }
 
@@ -277,6 +277,8 @@ body {
 #informacionServicios .cajas img {
   width: 100%;
   height: 215px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media all and (max-width: 768px) {
@@ -292,5 +294,130 @@ body {
 
 #informacionServicios .cajas p {
   font-size: .9rem;
+}
+
+#bannerCatalogo {
+  background-image: url(../../img/banner_catalogo.jpg);
+}
+
+#bannerCatalogo div h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#bannerCatalogo div p {
+  color: #dee4eb;
+  font-size: 1rem;
+}
+
+#informacionCatalogo h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+#informacionCatalogo > p {
+  background-image: url(../img/wood-2045380_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+#informacionCatalogo .row {
+  width: 90%;
+}
+
+#informacionCatalogo .row .vinoCard {
+  width: 80%;
+  margin: 2rem;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#informacionCatalogo .row .vinoCard img {
+  height: 230px;
+}
+
+#informacionCatalogo .row .vinoCard p {
+  margin: 0;
+  padding: .7rem;
+}
+
+@media all and (max-width: 768px) {
+  #informacionCatalogo .row .vinoCard {
+    margin: 1rem;
+  }
+}
+
+#informacionCatalogo .row .vinoCard:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#bannerContacto {
+  background-image: url(../img/banner_contacto.jpg);
+}
+
+#bannerContacto div h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#bannerContacto div p {
+  color: #dee4eb;
+  font-size: 1rem;
+}
+
+#informacionContacto h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+@media all and (max-width: 768px) {
+  #informacionContacto .formulario {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #informacionContacto form {
+    width: 90%;
+  }
+}
+
+#informacionContacto form .btn {
+  background-color: #722F37;
+}
+
+#informacionContacto .datos > p {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+#informacionContacto .datos img {
+  width: 30px;
+}
+
+@media all and (max-width: 768px) {
+  #informacionContacto .datos {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
