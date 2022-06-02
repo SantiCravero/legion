@@ -3,7 +3,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: map-get($fuentes, regular);
 }
 
 .navbar-brand{
