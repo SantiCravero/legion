@@ -77,10 +77,18 @@ body {
   height: 90vh;
 }
 
-.slogan h2 {
+.slogan h1 {
   color: white;
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
+  width: 50%;
+}
+
+@media all and (max-width: 768px) {
+  .slogan h1 {
+    font-size: 2rem;
+    width: 70%;
+  }
 }
 
 .slogan a {
@@ -111,7 +119,7 @@ body {
   background-color: #480c13;
 }
 
-#informacion .items h3 {
+#informacion .items h2 {
   letter-spacing: 1px;
 }
 
@@ -172,7 +180,11 @@ body {
 }
 
 #ubicacion .fuente {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+#ubicacion .row iframe {
+  width: 8;
 }
 
 #bannerNosotros {
@@ -299,7 +311,7 @@ body {
 }
 
 #bannerCatalogo {
-  background-image: url(../../img/banner_catalogo.jpg);
+  background-image: url(../img/banner_catalogo.jpg);
 }
 
 #bannerCatalogo div h2 {
@@ -313,7 +325,7 @@ body {
   font-size: 1rem;
 }
 
-#informacionCatalogo h2 {
+#informacionCatalogo h1 {
   text-align: center;
   color: black;
   font-size: 2.5rem;
@@ -322,7 +334,7 @@ body {
   padding: 10px 0;
 }
 
-#informacionCatalogo > p {
+#informacionCatalogo article > p {
   background-image: url(../img/wood-2045380_1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -331,33 +343,33 @@ body {
   font-weight: 700;
 }
 
-#informacionCatalogo .row {
+#informacionCatalogo article .row {
   width: 90%;
 }
 
-#informacionCatalogo .row .vinoCard {
+#informacionCatalogo article .row .vinoCard {
   width: 80%;
   margin: 2rem;
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
 
-#informacionCatalogo .row .vinoCard img {
+#informacionCatalogo article .row .vinoCard img {
   height: 230px;
 }
 
-#informacionCatalogo .row .vinoCard p {
+#informacionCatalogo article .row .vinoCard p {
   margin: 0;
   padding: .7rem;
 }
 
 @media all and (max-width: 768px) {
-  #informacionCatalogo .row .vinoCard {
+  #informacionCatalogo article .row .vinoCard {
     margin: 1rem;
   }
 }
 
-#informacionCatalogo .row .vinoCard:hover {
+#informacionCatalogo article .row .vinoCard:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
