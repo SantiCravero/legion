@@ -22,13 +22,30 @@ body {
   font-weight: 400;
 }
 
+.container-fluid {
+  margin: 0 3rem;
+}
+
+@media all and (max-width: 366px) {
+  .container-fluid {
+    margin: 0 1rem;
+  }
+}
+
 .navbar-brand {
-  background-image: url(../img/prueba.jpg);
+  background-image: url(../img/legion1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 150px;
-  height: 60px;
+  width: 175px;
+  height: 76px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.navbar-brand:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #navbarDark {
@@ -45,7 +62,7 @@ body {
 }
 
 .animation:hover {
-  padding: 1rem 0;
+  padding: .7rem 0;
 }
 
 .whatsapp {
@@ -59,10 +76,31 @@ body {
 #footer .imagen {
   width: 200px;
   height: 108px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#footer .imagen:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #footer .logo {
   width: 45px;
+  margin: 0 10px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#footer .logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media all and (max-width: 769px) {
+  #footer .logo {
+    margin: 0 5px;
+  }
 }
 
 #banner {
@@ -348,7 +386,7 @@ body {
 }
 
 #informacionCatalogo article .row .vinoCard {
-  width: 80%;
+  width: 75%;
   margin: 2rem;
   -webkit-transition: all 300ms;
   transition: all 300ms;
@@ -426,7 +464,7 @@ body {
 }
 
 #informacionContacto .datos img {
-  width: 30px;
+  width: 27px;
 }
 
 @media all and (max-width: 768px) {
