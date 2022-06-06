@@ -6,14 +6,26 @@ body{
     font-weight: map-get($fuentes, regular);
 }
 
+.container-fluid{
+    margin: 0 3rem;
+    @media all and (max-width: 366px){
+        margin: 0 1rem;
+    }
+}
+
 .navbar-brand{
-    background-image: url(../img/prueba.jpg);
+    background-image: url(../img/legion1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150px;
-    height: 60px;
+    width: 175px;
+    height: 76px;
+    transition: all 200ms;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
+
 #navbarDark{
     justify-content: right;
 }
@@ -22,7 +34,7 @@ body{
     backdrop-filter: blur(2px);
     transition: all 300ms;
     &:hover{
-        padding: 1rem 0;
+        padding: .7rem 0;
     }
 }
 
@@ -38,9 +50,21 @@ body{
     .imagen{
         width: 200px;
         height: 108px;
+        transition: all 300ms;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     .logo{
         width: 45px;
+        margin: 0 10px;
+        transition: all 300ms;
+        &:hover{
+            transform: scale(1.05)
+        }
+        @media all and (max-width: 769px){
+            margin: 0 5px;
+        }
     }
 }
 
