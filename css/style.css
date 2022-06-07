@@ -172,7 +172,7 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .carousel-inner .carousel-inner {
+  .carousel-inner {
     height: auto;
   }
 }
@@ -221,8 +221,20 @@ body {
   font-size: 2.5rem;
 }
 
-#ubicacion .row iframe {
-  width: 8;
+@media all and (max-width: 768px) {
+  #ubicacion .fuente {
+    font-size: 2rem;
+  }
+}
+
+#ubicacion .mensaje p {
+  font-size: 1.25rem;
+}
+
+@media all and (max-width: 576px) {
+  #ubicacion .mensaje p {
+    font-size: 1rem;
+  }
 }
 
 #bannerNosotros {
@@ -345,7 +357,7 @@ body {
 }
 
 #informacionServicios .cajas p {
-  font-size: .9rem;
+  font-size: .95rem;
 }
 
 #bannerCatalogo {
