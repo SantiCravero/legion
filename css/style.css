@@ -48,10 +48,94 @@ body {
           transform: scale(1.1);
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar-toggler .hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar-toggler .hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.navbar-toggler .line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.navbar-toggler .ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.navbar-toggler .ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.navbar-toggler .ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.navbar-toggler .ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
 #navbarDark {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+#navbarDark ul li a {
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#navbarDark ul li a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #8b1f2c;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+#navbarDark ul li a:hover:after {
+  width: 100%;
 }
 
 .animation {
@@ -172,8 +256,14 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .carousel-inner {
-    height: auto;
+  .carousel-inner img {
+    min-height: 213px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .carousel-indicators [data-bs-target] {
+    width: 37px;
   }
 }
 

@@ -44,8 +44,16 @@
     width: auto;
     max-height: 400px;
     text-align: center;
-    @media all and (max-width: 768px){
-        height: auto;
+    img{
+        @media all and (max-width: 768px){
+            min-height: 213px;
+        }
+    }
+}
+
+.carousel-indicators [data-bs-target]{
+    @media all and (min-width: 768px){
+        width: 37px;
     }
 }
 
