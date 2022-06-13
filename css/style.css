@@ -111,7 +111,7 @@ body {
           justify-content: right;
 }
 
-#navbarDark ul li a {
+#navbarDark ul li .link {
   text-transform: uppercase;
   position: relative;
   -webkit-transition: all 0.4s ease;
@@ -120,7 +120,7 @@ body {
   font-weight: bold;
 }
 
-#navbarDark ul li a:after {
+#navbarDark ul li .link:after {
   content: "";
   position: absolute;
   height: 2px;
@@ -134,8 +134,23 @@ body {
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 
-#navbarDark ul li a:hover:after {
+#navbarDark ul li .link:hover:after {
   width: 100%;
+}
+
+#navbarDark ul li .testing {
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5.5px;
+}
+
+#navbarDark .testing {
+  color: #8b1f2c;
+  border-bottom: 2px solid #8b1f2c;
 }
 
 .animation {
@@ -552,6 +567,20 @@ body {
 
 #informacionContacto form .btn {
   background-color: #722F37;
+  font-size: .9rem;
+  letter-spacing: 0;
+  padding: 0.6rem;
+  border-radius: 2px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  padding: 6px 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#informacionContacto form .btn:hover {
+  background-color: #480c13;
 }
 
 #informacionContacto .datos > p {

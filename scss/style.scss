@@ -70,7 +70,7 @@ body{
     justify-content: right;
     ul{
         li{
-            a{
+            .link{
                 text-transform: uppercase;
                 position: relative;
                 -webkit-transition: all 0.4s ease;
@@ -93,7 +93,20 @@ body{
                     width: 100%;
                 }
             }
+            .testing{
+                text-transform: uppercase;
+                position: relative;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                font-size: 15px;
+                font-weight: bold;
+                padding-bottom: 5.5px;
+            }
         }
+    }
+    .testing{
+        color: $color-nav;
+        border-bottom: 2px solid $color-nav;
     }
 }
 

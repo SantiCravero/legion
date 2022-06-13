@@ -25,25 +25,25 @@
         <div class="collapse navbar-collapse" id="navbarDark">
           <ul class="navbar-nav text-end ml-auto my-2">
             <li class="nav-item px-2 py-md-1">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item px-2 py-md-1">
-              <a class="nav-link active" aria-current="page" href="nosotros.html">Quiénes somos</a>
+              <a class="nav-link active link" aria-current="page" href="nosotros.html">Quiénes somos</a>
             </li>
             <li class="nav-item px-2 py-md-1">
-              <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+              <a class="nav-link active link" aria-current="page" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item px-2 py-md-1">
-              <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+              <a class="nav-link active link" aria-current="page" href="catalogo.html">Catálogo</a>
             </li>
             <li class="nav-item px-2 py-md-1">
-              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              <a class="nav-link active testing" aria-current="page" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp animate__animated animate__backInRight"></a>
+    <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp animate__animated animate__backInRight"></a>
   </div>
 
   <main>                   <!--Banner principal-->
@@ -59,16 +59,16 @@
         <div class="formulario col-12 col-md-6 mx-auto wow animate__animated animate__fadeInUp">
           <form class="row g-3 mx-auto my-3">
             <div class="col-md-6">
-              <label for="inputName4" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputName4" required>
+              <label for="inputName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputName" required>
             </div>
             <div class="col-md-6">
               <label for="inputTeléfono" class="form-label">Teléfono</label>
               <input type="tel" class="form-control" id="inputTeléfono" required>
             </div>
             <div class="col-12">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" required>
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" required>
             </div>
             <div class="col-12">
               <label for="inputAsunto" class="form-label">Asunto</label>
@@ -83,9 +83,23 @@
               <label class="form-check-label" for="flexCheckDefault">
                 ¿Desea recibir nuevas ofertas y novedades?
               </label>
-              </div>
+            </div>
             <div class="col-12 text-center">
-              <button type="submit" class="btn text-white">Enviar</button>
+              <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Tu consulta ha sido enviada.</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">Pronto un miembro de nuestro equipo se pondrá en contacto, muchas gracias!</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>

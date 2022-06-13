@@ -25,7 +25,10 @@
             width: 90%;
         }
         .btn{
-            background-color: $color-boton;
+            @include claseBoton (0);
+            padding: 6px 12px;
+            border-radius: 4px;
+            box-shadow: none; 
         }
     }
     .datos{
