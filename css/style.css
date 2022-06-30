@@ -202,6 +202,10 @@ body {
   }
 }
 
+#footer > p {
+  font-size: .9rem;
+}
+
 #banner {
   background-image: url(../img/banner_main.jpg);
   background-position: center;
